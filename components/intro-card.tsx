@@ -16,14 +16,15 @@ export default function IntroCard() {
     "Web Developer",
     "Design Engineer",
   ];
+  
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const roleInterval = setInterval(() => {
       setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
     }, 2000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(roleInterval);
   }, []);
 
   return (
@@ -221,24 +222,32 @@ export default function IntroCard() {
               transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
               className="mt-8 w-full"
             >
-              <div className="flex items-center justify-between mb-4 px-4">
-                <motion.h3
-                  initial={{ opacity: 0, x: -20 }}
+              <div className="relative w-full flex justify-between items-center mb-6 px-4">
+                <motion.div
+                  initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
-                  className="text-neutral-200 text-sm font-medium px-3 py-1.5 bg-neutral-800/50 rounded-md border border-neutral-700/50"
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                  className="flex items-center gap-3"
                 >
-                  GitHub Contributions
-                </motion.h3>
+                  <div className="flex flex-col items-center justify-center">
+                    <span className="text-neutral-400 text-2xl font-serif">"</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-neutral-300 text-sm font-medium tracking-wide">
+                      Making things possible with code
+                    </p>
+                    <div className="h-[1px] w-full bg-gradient-to-r from-neutral-700 to-transparent mt-1.5" />
+                  </div>
+                </motion.div>
                 <motion.a
                   href="https://cal.com/gitcuber"
                   target="_blank"
                   rel="noopener noreferrer"
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: 10 }}
                   animate={{ opacity: 1, x: 0 }}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
                   className="flex items-center gap-2 px-3 py-1.5 bg-neutral-800/50 rounded-md border border-neutral-700/50 hover:bg-neutral-800 transition-all duration-200 group"
                 >
                   <div className="flex items-center justify-center w-4 h-4 text-neutral-400 group-hover:text-neutral-200 transition-colors">
@@ -275,7 +284,7 @@ export default function IntroCard() {
                   year={new Date().getFullYear()}
                   colorScheme="dark"
                   fontSize={12}
-                  blockSize={8}
+                  blockSize={15}
                   blockMargin={4}
                   style={{
                     minHeight: "120px",
