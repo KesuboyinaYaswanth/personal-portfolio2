@@ -10,15 +10,36 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --shadow-custom: 0px_2px_3px_-1px_rgba (0, 0, 0, 0.1),
-    0px_1px_0px_0px_rgba (25, 28, 33, 0.02),
-    0px_0px_0px_1px_rgba (25, 28, 33, 0.08);
+  --shadow-custom: shadow-[0px_2px_3px_-1px_rgba (0, 0, 0, 0.2),
+    0px_1px_0px_0px_rgba (255, 255, 255, 0.05),
+    0px_0px_0px_1px_rgba (255, 255, 255, 0.1);]
+  --inner-shadow: shadow-[inset_-12px_-8px_40px_#46464620];
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #171717;
     --foreground: #ededed;
+    --shadow-custom: shadow-[0px_2px_3px_-1px_rgba (0, 0, 0, 0.2),
+    0px_1px_0px_0px_rgba (255, 255, 255, 0.05),
+    0px_0px_0px_1px_rgba (255, 255, 255, 0.1);]
+  --inner-shadow: shadow-[inset_-12px_-8px_40px_#46464620];
+  .react-calendar-heatmap .color-empty {
+    fill: #ebedf0;
+  }
+  .react-calendar-heatmap .color-scale-1 {
+    fill: #c6e48b;
+  }
+  .react-calendar-heatmap .color-scale-2 {
+    fill: #7bc96f;
+  }
+  .react-calendar-heatmap .color-scale-3 {
+    fill: #239a3b;
+  }
+  .react-calendar-heatmap .color-scale-4 {
+    fill: #196127;
+  }
   }
 }
 
