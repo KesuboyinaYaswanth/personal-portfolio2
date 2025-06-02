@@ -16,7 +16,7 @@ export default function IntroCard() {
     "Web Developer",
     "Design Engineer",
   ];
-  
+
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   useEffect(() => {
@@ -230,7 +230,9 @@ export default function IntroCard() {
                   className="flex items-center gap-3"
                 >
                   <div className="flex flex-col items-center justify-center">
-                    <span className="text-neutral-400 text-2xl font-serif">"</span>
+                    <span className="text-neutral-400 text-2xl font-serif">
+                      "
+                    </span>
                   </div>
                   <div className="flex flex-col">
                     <p className="text-neutral-300 text-sm font-medium tracking-wide">

@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gitcuber",
+  title: "Gitcuber | Full Stack Developer / Designer",
   description: "Full Stack Developer / Designer",
   icons: {
     icon: "/favicon.jpeg",
