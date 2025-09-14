@@ -1,20 +1,19 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { AppleHelloVietnameseEffect, GitcuberEffect } from '@/components/apple-hello-effect'
-import { useState } from 'react'
+import { GitcuberEffect } from "@/components/apple-hello-effect";
+import { useState } from "react";
 function Intro() {
-  const [showName, setShowName] = useState(false)
+  const [showName, setShowName] = useState(false);
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen gap-0">
       <GitcuberEffect
-        className="h-36"
-        speed={1}
+        className="h-36 mx-auto"
+        speed={3}
         onAnimationComplete={() => setShowName(true)}
       />
     </div>
-  )
+  );
 }
 
-export default Intro
+export default Intro;

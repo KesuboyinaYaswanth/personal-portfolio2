@@ -251,11 +251,11 @@ function GitcuberEffect({
 
   return (
     <motion.svg
-      className={cn("h-64", className)}
+      className={cn("h-50", className)}
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="-100 -100 800 260" // Expanded viewBox for padding
+      viewBox="0 0 700 200" // Expanded viewBox for padding
       fill="none"
-      stroke="currentColor"
+      stroke="white"
       strokeWidth="10"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
