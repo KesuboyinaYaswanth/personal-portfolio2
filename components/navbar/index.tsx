@@ -1,44 +1,45 @@
 "use client";
 
-import {
-  IconBriefcaseFilled,
-  IconFeatherFilled,
-  IconFolderFilled,
-  IconHomeFilled,
-  IconMicroscopeFilled,
-} from "@tabler/icons-react";
 import { motion, useScroll } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Container from "../container";
+import {
+  BlogsIcons,
+  HouseIcon,
+  LabsIcons,
+  SkillsIcons,
+  WorkIcons,
+} from "../ui/icons";
+import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 
 const Navbar = () => {
   const navItems = [
     {
       title: "Home",
       path: "/",
-      icon: IconHomeFilled,
+      icon: HouseIcon,
     },
     {
       title: "Work",
       path: "/work",
-      icon: IconBriefcaseFilled,
+      icon: WorkIcons,
     },
     {
       title: "Labs",
-      path: "/components",
-      icon: IconMicroscopeFilled,
+      path: "/",
+      icon: LabsIcons,
     },
     {
       title: "Skills",
       path: "/skills",
-      icon: IconFeatherFilled,
+      icon: SkillsIcons,
     },
     {
       title: "Blog",
       path: "/blog",
-      icon: IconFolderFilled,
+      icon: BlogsIcons,
     },
   ];
 
@@ -68,7 +69,7 @@ const Navbar = () => {
                 <Link
                   href={item.path}
                   key={idx}
-                  className="relative px-2 py-1 text-sm"
+                  className="relative px-2 py-1 text-sm group"
                   onMouseEnter={() => setHovered(idx)}
                   onMouseLeave={() => setHovered(null)}
                 >
@@ -80,9 +81,9 @@ const Navbar = () => {
                   )}
                   <div className="flex flex-col items-center justify-center gap-1">
                     <span
-                      className={`relative z-10 transition-colors duration-200 ${
+                      className={`relative z-10 transform transition duration-200 group-hover:scale-110 ${
                         isActive
-                          ? "dark:text-neutral-300/70 text-neutral-800 transform transition-all"
+                          ? "dark:text-neutral-300/70 text-neutral-800"
                           : hovered === idx
                           ? "dark:text-white text-neutral-700"
                           : "text-neutral-500/40"
@@ -105,7 +106,7 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            {/* <div className="h-8 flex items-center justify-center">
+            <div className="h-8 flex items-center justify-center">
               <div className="h-full w-[2px] bg-gradient-to-b from-transparent via-neutral-400 to-transparent dark:via-neutral-500 relative rounded-full">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-300 to-transparent dark:via-neutral-600 blur-[0.5px] rounded-full"></div>
               </div>
@@ -114,7 +115,7 @@ const Navbar = () => {
               <div className="flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 bg-cardColor text-white hover:bg-cardColorForeground py-4 shadow-premium h-6 px-2.5 text-xs hover:text-brand">
                 <AnimatedThemeToggler className=" dark:text-secondary text-neutral-900" />
               </div>
-            </div> */}
+            </div>
           </div>
         </nav>
       </Container>

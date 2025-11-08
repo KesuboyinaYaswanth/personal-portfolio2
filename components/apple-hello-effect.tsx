@@ -2,6 +2,7 @@
 
 import type { TargetAndTransition } from "motion/react";
 import { motion } from "motion/react";
+import React, { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -249,9 +250,20 @@ function GitcuberEffect({
 }: Props) {
   const calc = (x: number) => x * speed;
 
+  // replay key: incrementing this will remount the SVG and restart the animations
+  const [replayKey, setReplayKey] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setReplayKey((k) => k + 1);
+    }, 15000); // replay every 15 seconds
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <motion.svg
-      className={cn("h-50 dark:stroke-white stroke-background", className)}
+      key={replayKey}
+      className={cn("h-50 stroke-white", className)}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 700 200" // Expanded viewBox for padding
       fill="none"
