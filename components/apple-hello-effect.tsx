@@ -251,12 +251,11 @@ function GitcuberEffect({
 
   return (
     <motion.svg
-      className={cn("h-50", className)}
+      className={cn("h-50 dark:stroke-white stroke-background", className)}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 700 200" // Expanded viewBox for padding
       fill="none"
-      stroke="white"
-      strokeWidth="10"
+      strokeWidth="12"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, delay: calc(0.5) }}
@@ -277,25 +276,23 @@ function GitcuberEffect({
           delay: calc(0.7),
           opacity: { duration: 0.7, delay: calc(0.7) },
         }}
-     
       />
-        <motion.path
-          d="M177.455 71.2361H227.228M145.135 38C145.135 56.4 150.378 63.6667 153 65"
-          style={{ strokeLinecap: "round" }}
-          className={"stroke-yellow-400"}
-          initial={initialProps}
-          animate={animateProps}
-          transition={{
-            duration: calc(0.8),
+      <motion.path
+        d="M177.455 71.2361H227.228M145.135 38C145.135 56.4 150.378 63.6667 153 65"
+        style={{ strokeLinecap: "round" }}
+        className={"stroke-gray-400"}
+        initial={initialProps}
+        animate={animateProps}
+        transition={{
+          duration: calc(0.8),
           ease: "easeInOut",
           delay: calc(4),
           opacity: { duration: 0.4, delay: calc(4) },
         }}
-           onAnimationComplete={onAnimationComplete}
+        onAnimationComplete={onAnimationComplete}
       />
-
     </motion.svg>
-  )
+  );
 }
 
 export { AppleHelloEnglishEffect, AppleHelloVietnameseEffect, GitcuberEffect };

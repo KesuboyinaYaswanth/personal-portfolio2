@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Figtree, Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,8 +10,14 @@ const inter = Inter({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 export const metadata: Metadata = {
-  title: "Gitcuber",
+  title: "Gitcuber | Mobile Developer",
   description: "Full Stack Developer / Designer",
   icons: {
     icon: "/profile.jpg",
@@ -23,12 +30,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} antialiased bg-neutral-100 dark:bg-background scroll-smooth`}
+        className={`${figtree.className} antialiased bg-white dark:bg-background scroll-smooth`}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div style={{ position: "absolute", height: "100%", width: "100%" }}>
+            {/* <DarkVeil noiseIntensity={0.02} speed={1} hueShift={4534543} />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/10" /> */}
+          </div>
+
+          <Navbar />
+
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
