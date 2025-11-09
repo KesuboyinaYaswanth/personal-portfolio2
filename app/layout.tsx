@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
-import { Figtree, Inter } from "next/font/google";
+import { Figtree, Instrument_Serif, Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,6 +14,18 @@ const figtree = Figtree({
   variable: "--font-figtree",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${figtree.className} antialiased bg-white dark:bg-background scroll-smooth`}
+        className={`${figtree.className} ${instrumentSerif.className} antialiased bg-white dark:bg-background scroll-smooth`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div style={{ position: "absolute", height: "100%", width: "100%" }}>

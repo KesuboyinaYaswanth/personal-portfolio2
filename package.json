@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@octokit/graphql": "^9.0.1",
-    "@radix-ui/react-tooltip": "^1.2.7",
+    "@radix-ui/react-tooltip": "^1.2.8",
     "@tabler/icons": "^3.34.1",
     "@tabler/icons-react": "^3.33.0",
     "class-variance-authority": "^0.7.1",
