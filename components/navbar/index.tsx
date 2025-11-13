@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Container from "../container";
+import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import {
   BlogsIcons,
   HouseIcon,
@@ -12,7 +13,6 @@ import {
   SkillsIcons,
   WorkIcons,
 } from "../ui/icons";
-import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 
 const Navbar = () => {
   const navItems = [
@@ -92,7 +92,7 @@ const Navbar = () => {
                       <item.icon size={isActive ? 20 : 18} />
                     </span>
                     <span
-                      className={`relative z-10 text-[10px] transition-colors duration-200 ${
+                      className={`relative z-10 text-[10px] font-['Manrope'] transition-colors duration-200 ${
                         isActive
                           ? "dark:text-white text-neutral-800"
                           : hovered === idx

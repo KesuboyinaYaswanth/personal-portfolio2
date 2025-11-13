@@ -544,3 +544,4 @@ export const BlogsIcons = ({ size = 24, title, ...props }: IconProps) => {
     </svg>
   );
 };
+
