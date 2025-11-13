@@ -117,14 +117,14 @@ const Hero = () => {
               </div>
             </div>
             <a
-              href="https://x.com/messages/compose?recipient_id="
+              href="https://x.com/messages/compose?recipient_id=1737091389366644736"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Send a direct message on X"
-              className="flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 bg-cardColor text-white hover:bg-cardColorForeground py-3 shadow-premium h-6 px-2.5 text-xs hover:text-brand"
+              className="flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 bg-cardColor text-white hover:bg-cardColorForeground py-4 shadow-premium h-6 px-3 text-xs hover:text-brand"
             >
               <IconBrandX className="text-neutral-500" />
-              <span className="font-['Manrope'] text-neutral-500 font-semibold">
+              <span className="font-['Manrope'] text-white font-semibold">
                 Twitter DM
               </span>
             </a>
@@ -137,15 +137,15 @@ const Hero = () => {
                 and polished apps for iOS and Android. Pragmatic with
                 Swift/SwiftUI, Kotlin, and React Native—choosing what delivers
                 the best experience. Partnered with{" "}
-                <span className="underline underline-offset-4 inline-block font-semibold text-black dark:text-white">
+                <span className="inline-block font-semibold text-black dark:text-white">
                   5+ freelance clients
                 </span>{" "}
                 and shipped production apps published on the{" "}
-                <span className="underline underline-offset-4 inline-block font-semibold text-black dark:text-white">
+                <span className="inline-block font-semibold text-black dark:text-white">
                   App Store
                 </span>{" "}
                 and{" "}
-                <span className="underline underline-offset-4 inline-block font-semibold text-black dark:text-white">
+                <span className="inline-block font-semibold text-black dark:text-white">
                   Play Store
                 </span>{" "}
                 . Focused on performance, delightful micro‑interactions, and
