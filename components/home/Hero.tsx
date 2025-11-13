@@ -124,7 +124,7 @@ const Hero = () => {
               className="flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 bg-cardColor text-white hover:bg-cardColorForeground py-4 shadow-premium h-6 px-3 text-xs hover:text-brand"
             >
               <IconBrandX className="text-neutral-500" />
-              <span className="font-['Manrope'] text-white font-semibold">
+              <span className="font-['Manrope'] dark:text-white text-black font-semibold">
                 Twitter DM
               </span>
             </a>

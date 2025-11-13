@@ -75,19 +75,19 @@
 
 /* Selection colors: default (light mode) -> dark selection; dark mode -> light selection */
 ::selection {
-  background-color: #000000;
+  background-color: #ff1e57;
   color: #ffffff;
 }
 ::-moz-selection {
-  background-color: #000000;
+  background-color: #ff1e57;
   color: #ffffff;
 }
 
 .dark ::selection {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ff1e57;
+  color: #fff;
 }
 .dark ::-moz-selection {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ff1e57;
+  color: #fff;
 }
