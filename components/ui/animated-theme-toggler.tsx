@@ -1,7 +1,6 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 
@@ -15,7 +14,6 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
   const [isDark, setIsDark] = useState(false);
   const [mounted, setMounted] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -69,6 +67,16 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
         pseudoElement: "::view-transition-new(root)",
       }
     );
+    // Notify other components that the theme was toggled via this control
+    try {
+      const newTheme = document.documentElement.classList.contains("dark");
+      const ev = new CustomEvent("theme-toggle", {
+        detail: { isDark: newTheme },
+      });
+      document.dispatchEvent(ev);
+    } catch (e) {
+      // ignore
+    }
   }, [isDark]);
 
   if (!mounted) {

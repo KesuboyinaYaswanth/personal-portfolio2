@@ -50,7 +50,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-999">
+    <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-999 ">
       <Container>
         <nav className="flex px-4 py-2 items-center backdrop-blur-md transition-all duration-300 rounded-full border dark:border-border border-border/15 bg-white/80 dark:bg-[#1A1B1C]/80 ">
           {/* <Link href={"/"}>

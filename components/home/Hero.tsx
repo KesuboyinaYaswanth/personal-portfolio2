@@ -83,7 +83,7 @@ const Hero = () => {
 
             {/* content */}
             <div className="relative z-10 flex items-center justify-center w-full h-full">
-              <GitcuberEffect key={effectKey} className="size-80" />
+              <GitcuberEffect key={effectKey} className="lg:size-80 size-64" />
             </div>
           </div>
         </Container>
@@ -98,7 +98,7 @@ const Hero = () => {
             <div className="flex flex-row gap-3 items-center">
               <h1
                 style={{ fontFamily: "var(--font-instrument-serif)" }}
-                className="text-4xl font-semibold text-black dark:text-white"
+                className="lg:text-4xl text-2xl font-semibold text-black dark:text-white"
               >
                 Arpit Chaudhary
               </h1>
