@@ -90,17 +90,20 @@ const Hero = () => {
         <div className="relative mx-6 flex gap-4 flex-col justify-between">
           {/* Profile image and name aligned vertically center */}
           <img
-            src="/profile.jpg"
+            src="/profile3.jpg"
             alt="profile picture"
             className="size-28 rounded-full -mt-12"
           />
           <div className="text-left flex flex-row items-center gap-3 justify-between w-full">
             <div className="flex flex-row gap-3 items-center">
               <h1
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
+                style={{
+                  fontFamily: "var(--font-instrument-serif)",
+                  color: "#ffffff",
+                }}
                 className="lg:text-4xl text-2xl font-semibold text-black dark:text-white"
               >
-                Arpit Chaudhary
+                Yaswanth Kesuboyina
               </h1>
               <div className="text-center flex justify-center items-center">
                 <Tooltip>

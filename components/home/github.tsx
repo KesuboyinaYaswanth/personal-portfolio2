@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import Container from "../container";
-import { FlickeringGrid } from "../ui/flickering-grid";
 
 const Github = () => {
   const [isDark, setIsDark] = useState<boolean>(() => {
@@ -53,10 +52,10 @@ const Github = () => {
             <h1 className="font-semibold text-3xl dark:text-white text-neutral-800">
               Contributions
             </h1>
-            <p className="text-neutral-500 mt-1 text-xl">@gitcuber369</p>
+            <p className="text-neutral-500 mt-1 text-xl">@KesuboyinaYaswanth</p>
           </div>
           <Link
-            href="https://github.com/gitcuber369"
+            href="https://github.com/KesuboyinaYaswanth"
             className="flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 bg-cardColor text-white hover:bg-cardColorForeground py-4 shadow-premium h-6 px-3 text-xs hover:text-brand font-['Manrope']"
           >
             <IconBrandGithubCopilot className="text-neutral-500" />
@@ -67,7 +66,7 @@ const Github = () => {
         </div>
         <div className="flex mt-4 font-['Manrope'] font-medium text-neutral-500">
           <GitHubCalendar
-            username="gitcuber369"
+            username="KesuboyinaYaswanth"
             colorScheme={isDark ? "dark" : "light"}
             theme={{
               light: ["#e5e7eb", "#64748b", "#64748b", "#64748b", "#334155"],

@@ -2,7 +2,7 @@ import Container from "@/components/container";
 import Experience from "@/components/home/experience";
 import Github from "@/components/home/github";
 import Hero from "@/components/home/Hero";
-import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import Leetcode from "@/components/home/leetcode";
 
 function Home() {
   return (
@@ -13,6 +13,7 @@ function Home() {
         <div className="w-full flex flex-col">
           <Hero />
           <Github />
+          <Leetcode />
           <Experience />
         </div>
       </Container>
