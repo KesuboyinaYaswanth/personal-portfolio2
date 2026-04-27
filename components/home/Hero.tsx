@@ -91,7 +91,7 @@ const Hero = () => {
         <div className="relative mx-6 flex gap-4 flex-col justify-between">
           {/* Profile image and name aligned vertically center */}
           <img
-            src="/profile3.jpg"
+            src="/profile4.jpg"
             alt="profile picture"
             className="size-28 rounded-full -mt-12"
           />
@@ -137,23 +137,17 @@ const Hero = () => {
           <div className="pb-4 max-w-3xl">
             <div className="space-y-3">
               <p className="text-sm text-left text-neutral-700 dark:text-neutral-300 font-['Manrope'] leading-snug tracking-tight">
-                React Native–focused mobile engineer crafting fast, accessible,
-                and polished apps for iOS and Android. Pragmatic with
-                Swift/SwiftUI, Kotlin, and React Native—choosing what delivers
-                the best experience. Partnered with{" "}
+                Machine learning enthusiast with a strong foundation in
+                mathematics, data structures, and algorithms. Focused on
+                building efficient and scalable solutions using ML and neural
+                networks, while applying solid problem-solving skills from{" "}
                 <span className="inline-block font-semibold text-black dark:text-white">
-                  5+ freelance clients
+                  DSA
                 </span>{" "}
-                and shipped production apps published on the{" "}
-                <span className="inline-block font-semibold text-black dark:text-white">
-                  App Store
-                </span>{" "}
-                and{" "}
-                <span className="inline-block font-semibold text-black dark:text-white">
-                  Play Store
-                </span>{" "}
-                . Focused on performance, delightful micro‑interactions, and
-                clean, testable architecture.
+                . Comfortable translating mathematical concepts into practical
+                models and optimizing performance for real-world applications.
+                Actively solving problems and exploring advanced topics to
+                deepen understanding of AI systems and algorithmic thinking.
               </p>
             </div>
           </div>
