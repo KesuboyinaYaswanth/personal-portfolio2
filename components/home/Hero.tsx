@@ -91,7 +91,7 @@ const Hero = () => {
         <div className="relative mx-6 flex gap-4 flex-col justify-between">
           {/* Profile image and name aligned vertically center */}
           <img
-            src="/profile4.jpg"
+            src="/profile4.jpeg"
             alt="profile picture"
             className="size-28 rounded-full -mt-12"
           />
