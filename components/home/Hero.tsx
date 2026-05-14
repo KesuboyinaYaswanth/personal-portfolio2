@@ -19,6 +19,9 @@ const Hero = () => {
   // wallpaper sources (from public/wallpapers)
   const wallpapers = [
     "/wallpapers/0.png",
+    "/wallpapers/01.jpg",
+    "/wallpapers/02.jpg",
+    "/wallpapers/03.jpg",
     "/wallpapers/1.jpg",
     "/wallpapers/11.jpg",
     "/wallpapers/15.jpg",
