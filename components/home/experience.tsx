@@ -12,7 +12,7 @@ const Experience = () => {
       <Container className="px-6 w-full my-4">
         <div className="flex">
           <h1 className="font-semibold text-3xl dark:text-white text-neutral-800">
-            My work experience
+            My work experience.
           </h1>
         </div>
       </Container>
