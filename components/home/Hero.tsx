@@ -10,7 +10,6 @@ import {
   IconRosetteDiscountCheckFilled,
 } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
-import { GitcuberEffect } from "../apple-hello-effect";
 import Container from "../container";
 
 const Hero = () => {
@@ -18,7 +17,8 @@ const Hero = () => {
 
   // wallpaper sources (from public/wallpapers)
   const wallpapers = [
-    "/wallpapers/0.png",
+    "/wallpapers/011.jpg",
+    /*"/wallpapers/012.jpeg",
     "/wallpapers/01.jpg",
     "/wallpapers/02.jpg",
     "/wallpapers/03.jpg",
@@ -27,7 +27,7 @@ const Hero = () => {
     "/wallpapers/15.jpg",
     "/wallpapers/19.jpg",
     "/wallpapers/58.jpg",
-    "/wallpapers/7.jpg",
+    "/wallpapers/7.jpg",*/
   ];
 
   const [current, setCurrent] = useState(0);
@@ -86,9 +86,9 @@ const Hero = () => {
             </div>
 
             {/* content */}
-            <div className="relative z-10 flex items-center justify-center w-full h-full">
+            {/*<div className="relative z-10 flex items-center justify-center w-full h-full">
               <GitcuberEffect key={effectKey} className="lg:size-80 size-64" />
-            </div>
+            </div>*/}
           </div>
         </Container>
         <div className="relative mx-6 flex gap-4 flex-col justify-between">
@@ -102,7 +102,7 @@ const Hero = () => {
             <div className="flex flex-row gap-3 items-center">
               <h1
                 style={{
-                  fontFamily: "var(--font-instrument-serif)",
+                  fontFamily: "Condensed",
                   color: "#ffffff",
                 }}
                 className="lg:text-4xl text-2xl font-semibold text-black dark:text-white"

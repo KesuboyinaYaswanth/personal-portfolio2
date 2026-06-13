@@ -30,7 +30,7 @@ const Leetcode = () => {
       <Container className="px-6 w-full my-4">
         <div className="flex flex-row gap-4 items-center justify-between">
           <div className="flex flex-row gap-2">
-            <h1 className="font-semibold text-3xl dark:text-white text-neutral-800">
+            <h1 className="font-['condensed'] font-semibold text-3xl dark:text-white text-neutral-800">
               LeetCode Submissions
             </h1>
             <p className="text-neutral-500 mt-1 text-xl">@YaswanthKesuboyina</p>
