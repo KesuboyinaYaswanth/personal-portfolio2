@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Yaswanth Kesuboyina | Machine Learning Enthusiast | Full Stack Developer",
   description: "Full Stack Developer / Designer",
   icons: {
-    icon: "/profile4.jpg",
+    icon: "/profile4.jpeg",
   },
 };
 
