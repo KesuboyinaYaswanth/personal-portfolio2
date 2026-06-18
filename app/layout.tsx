@@ -29,10 +29,11 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Gitcuber | Mobile Developer",
+  title:
+    "Yaswanth Kesuboyina | Machine Learning Enthusiast | Full Stack Developer",
   description: "Full Stack Developer / Designer",
   icons: {
-    icon: "/profile.jpg",
+    icon: "/profile4.jpg",
   },
 };
 
