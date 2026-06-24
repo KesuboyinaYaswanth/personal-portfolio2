@@ -69,7 +69,7 @@ const Github = () => {
             username="KesuboyinaYaswanth"
             colorScheme={isDark ? "dark" : "light"}
             theme={{
-              light: ["#e5e7eb", "#64748b", "#64748b", "#64748b", "#334155"],
+              light: ["#e5e7eb", "#a2a2a2", "#808080", "#606060", "#3c3c3c"],
               dark: ["#0b0f1a", "#334155", "#1e293b", "#334155", "#334155"],
             }}
           />
