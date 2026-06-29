@@ -49,8 +49,8 @@ const Leetcode = () => {
             username="YaswanthKesuboyina"
             size="large"
             colors={{
-              noActivity: "#1a1a1a",
-              activity: ["#0b0f1a", "#334155", "#1e293b", "#334155", "#334155"],
+              noActivity: "#000000",
+              activity: ["#131313", "#323232", "#505050", "#8a8a8a", "#c0c0c0"],
               text: "#ffffff",
               title: "#ffffff",
               months: "#ffffff",
