@@ -27,6 +27,10 @@ const Leetcode = () => {
 
   return (
     <>
+      <div
+        aria-hidden
+        className="relative -right-px col-start-2 row-span-full row-start-1 border-x-[color:var(--pattern-fg)] bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed h-10 w-full pointer-events-none border-y border-border/15 dark:border-border"
+      />
       <Container className="px-6 w-full my-4">
         <div className="flex flex-row gap-4 items-center justify-between">
           <div className="flex flex-row gap-2">

@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import CursorTrail from "@/components/ui/cursor-trail";
 import type { Metadata } from "next";
 import { Figtree, Instrument_Serif, Inter, Manrope } from "next/font/google";
 import "./globals.css";
@@ -54,7 +55,7 @@ export default function RootLayout({
           </div>
 
           <Navbar />
-
+          <CursorTrail />
           {children}
         </ThemeProvider>
       </body>

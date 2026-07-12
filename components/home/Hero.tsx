@@ -17,7 +17,7 @@ const Hero = () => {
 
   // wallpaper sources (from public/wallpapers)
   const wallpapers = [
-    /*/wallpapers/013.jpg",*/
+    "/wallpapers/012.jpeg",
     "/wallpapers/016.jpg",
     "/wallpapers/015.jpg",
     /*"/wallpapers/012.jpeg",
@@ -126,7 +126,7 @@ const Hero = () => {
               </div>
             </div>
             <a
-              href="https://x.com/messages/compose?recipient_id=1737091389366644736"
+              href="https://x.com/messages/compose?recipient_id=1786699588373504000"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Send a direct message on X"
