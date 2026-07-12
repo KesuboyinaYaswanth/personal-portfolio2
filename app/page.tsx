@@ -3,6 +3,7 @@ import Experience from "@/components/home/experience";
 import Github from "@/components/home/github";
 import Hero from "@/components/home/Hero";
 import Leetcode from "@/components/home/leetcode";
+import TechStack from "@/components/home/techstack";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
           <Github />
           <Leetcode />
           <Experience />
+          <TechStack />
         </div>
       </Container>
     </div>
