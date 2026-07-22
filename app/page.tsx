@@ -3,6 +3,7 @@ import Experience from "@/components/home/experience";
 import Github from "@/components/home/github";
 import Hero from "@/components/home/Hero";
 import Leetcode from "@/components/home/leetcode";
+import Projects from "@/components/home/Projects";
 import TechStack from "@/components/home/techstack";
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
           <Github />
           <Leetcode />
           <Experience />
+          <Projects />
           <TechStack />
         </div>
       </Container>

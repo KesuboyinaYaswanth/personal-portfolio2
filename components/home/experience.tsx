@@ -25,7 +25,7 @@ const Experience = () => {
             EduSkills | AWS Academy
           </p>
 
-          <p className="mt-4 text-neutral-700 dark:text-neutral-300">
+          <p className="text-sm text-left text-neutral-700 dark:text-neutral-300 font-['Manrope'] leading-snug tracking-tight">
             Completed a virtual internship focused on Artificial Intelligence
             and Machine Learning using AWS services. Gained hands-on experience
             with cloud-based AI/ML concepts, data processing, model training,
@@ -33,7 +33,7 @@ const Experience = () => {
             used in modern machine learning applications.
           </p>
 
-          <ul className="list-disc ml-6 mt-4 text-neutral-700 dark:text-neutral-300">
+          <ul className="list-disc ml-6 mt-4 text-neutral-700 dark:text-neutral-300 font-['Manrope'] leading-snug tracking-tight">
             <li>Learned fundamentals of AI and Machine Learning.</li>
             <li>Worked with AWS cloud services and ML tools.</li>
             <li>Understood data preprocessing and model building workflows.</li>
